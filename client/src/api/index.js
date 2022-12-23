@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 //here we are connecting to backend
-const API = axios.create({ baseURL: 'http://localhost:5000'})
+//'http://localhost:5000'
+const API = axios.create({ baseURL: 'https://stack-overflow-clone-1bvj6uzki-kotha-vineeth.vercel.app'})
 
 //Here for every request we r sending the token.If token is valid then continue else no.Example : If we want to post a question we r sending the request to server along with token.First it check if token is valid then it allows to change in database else no. 
 API.interceptors.request.use((req) => {
